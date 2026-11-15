@@ -288,9 +288,16 @@
 
 .game-footer {
   display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 22px;
+}
+
+.footer-message {
+  display: flex;
+  width: 100%;
   align-items: center;
   gap: 14px;
-  margin-top: 22px;
 }
 
 .game-footer p {
@@ -304,6 +311,23 @@
   height: 1px;
   flex: 1;
   background: rgba(161, 181, 222, 0.14);
+}
+
+.creator-link {
+  color: #8794ad;
+  font-size: 11px;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.creator-link:hover {
+  color: #c3ccff;
+}
+
+.creator-link:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid #8b9cff;
+  outline-offset: 3px;
 }
 
 @media (max-width: 520px) {

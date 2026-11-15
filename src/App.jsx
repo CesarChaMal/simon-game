@@ -121,9 +121,19 @@ function App() {
       </section>
 
       <footer className="game-footer">
-        <span className="footer-line" />
-        <p>¿Hasta qué nivel puedes llegar?</p>
-        <span className="footer-line" />
+        <div className="footer-message">
+          <span className="footer-line" />
+          <p>¿Hasta qué nivel puedes llegar?</p>
+          <span className="footer-line" />
+        </div>
+        <a
+          className="creator-link"
+          href="https://github.com/Cesarkubanski"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Hecho por Cesarkubanski
+        </a>
       </footer>
     </main>
   )
