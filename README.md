@@ -32,9 +32,20 @@ La aplicación está disponible en [simon-game-ruby-three.vercel.app](https://si
 
 Después de cargarla una vez con conexión, la aplicación también puede abrirse sin conexión.
 
-## Publicación
+## Publicar en Vercel paso a paso
 
-El proyecto está alojado en Vercel. Si Vercel está conectado al repositorio, al subir los cambios a la rama configurada se publicará automáticamente una nueva versión.
+1. Sube el proyecto a [GitHub](https://github.com/Cesarkubanski/simon-game).
+2. Entra en [vercel.com](https://vercel.com) e inicia sesión con tu cuenta de GitHub.
+3. En el panel de Vercel, pulsa **Add New → Project**.
+4. Busca el repositorio `Cesarkubanski/simon-game` y pulsa **Import**. Si no aparece, concede a Vercel acceso al repositorio desde la configuración de GitHub.
+5. Comprueba que Vercel detecte **Vite**. Si debes configurar los valores manualmente, utiliza:
+   - **Install Command:** `npm install`
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+6. Pulsa **Deploy** y espera a que termine la compilación.
+7. Abre el dominio que Vercel muestra al finalizar. También puedes usar el dominio existente: [simon-game-ruby-three.vercel.app](https://simon-game-ruby-three.vercel.app/).
+
+Si el proyecto ya está conectado a Vercel, cada `git push` a la rama configurada publicará automáticamente una nueva versión.
 
 ## Comandos disponibles
 
