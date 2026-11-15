@@ -22,6 +22,20 @@ npm run dev
 
 Abre en el navegador la dirección que muestra Vite en la terminal, normalmente `http://localhost:5173/`.
 
+## Instalar en Android
+
+La aplicación está disponible en [simon-game-ruby-three.vercel.app](https://simon-game-ruby-three.vercel.app/) y se puede instalar desde Chrome:
+
+1. Abre el enlace en Chrome en tu teléfono Android.
+2. Pulsa el menú de tres puntos y selecciona **Instalar aplicación** o **Añadir a pantalla de inicio**.
+3. Confirma la instalación. Simón aparecerá como una aplicación en tu pantalla de inicio.
+
+Después de cargarla una vez con conexión, la aplicación también puede abrirse sin conexión.
+
+## Publicación
+
+El proyecto está alojado en Vercel. Si Vercel está conectado al repositorio, al subir los cambios a la rama configurada se publicará automáticamente una nueva versión.
+
 ## Comandos disponibles
 
 | Comando | Descripción |
