@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 const COLORS = [
-  { id: 'green', name: 'Green' },
-  { id: 'red', name: 'Red' },
-  { id: 'yellow', name: 'Yellow' },
-  { id: 'blue', name: 'Blue' },
+  { id: 'green', name: 'Verde' },
+  { id: 'red', name: 'Rojo' },
+  { id: 'yellow', name: 'Amarillo' },
+  { id: 'blue', name: 'Azul' },
 ]
 
 const randomColor = () => COLORS[Math.floor(Math.random() * COLORS.length)].id
@@ -63,10 +63,10 @@ function App() {
   }
 
   const statusText = {
-    ready: "Press start when you're ready.",
-    playing: 'Watch the sequence…',
-    input: 'Your turn! Repeat the sequence.',
-    lost: 'Incorrect sequence. Try again!',
+    ready: 'Pulsa comenzar cuando estés listo',
+    playing: 'Observa la secuencia…',
+    input: '¡Tu turno! Repite la secuencia',
+    lost: 'Secuencia incorrecta. ¡Inténtalo de nuevo!',
   }[status]
 
   return (
@@ -74,15 +74,15 @@ function App() {
       <header className="game-header">
         <div className="brand-icon" aria-hidden="true">S</div>
         <div>
-          <p className="eyebrow">MEMORY GAME</p>
-          <h1>Simon</h1>
+          <p className="eyebrow">JUEGO DE MEMORIA</p>
+          <h1>Simón</h1>
         </div>
       </header>
 
-      <section className="game-card" aria-label="Simon game">
+      <section className="game-card" aria-label="Juego Simón">
         <div className="score-row">
           <div className="score">
-            <span className="score-label">LEVEL</span>
+            <span className="score-label">NIVEL</span>
             <strong>{sequence.length}</strong>
           </div>
           <p className={`game-status game-status--${status}`} aria-live="polite">
@@ -90,12 +90,12 @@ function App() {
             {statusText}
           </p>
           <div className="score score--progress">
-            <span className="score-label">PROGRESS</span>
+            <span className="score-label">PROGRESO</span>
             <strong>{status === 'input' ? `${userSequence.length}/${sequence.length}` : '—'}</strong>
           </div>
         </div>
 
-        <div className="board" aria-label="Color pads">
+        <div className="board" aria-label="Panel de colores">
           {COLORS.map(({ id, name }) => (
             <button
               key={id}
@@ -108,31 +108,31 @@ function App() {
             />
           ))}
           <div className="board-center" aria-hidden="true">
-            <span>SIMON</span>
-            <small>{sequence.length ? `ROUND ${sequence.length}` : 'MEMORY'}</small>
+            <span>SIMÓN</span>
+            <small>{sequence.length ? `RONDA ${sequence.length}` : 'MEMORIA'}</small>
           </div>
         </div>
 
         <button className="start-button" type="button" onClick={startGame}>
           <span aria-hidden="true">{status === 'ready' ? '▶' : '↻'}</span>
-          {status === 'ready' ? 'Start game' : 'Restart game'}
+          {status === 'ready' ? 'Comenzar' : 'Reiniciar partida'}
         </button>
-        <p className="instruction">Watch, remember, and repeat the colors in order.</p>
+        <p className="instruction">Mira, memoriza y repite el orden de los colores.</p>
       </section>
 
       <footer className="game-footer">
         <div className="footer-message">
           <span className="footer-line" />
-          <p>How high can you score?</p>
+          <p>¿Hasta qué nivel puedes llegar?</p>
           <span className="footer-line" />
         </div>
         <a
           className="creator-link"
-          href="https://github.com/cesarchamal"
+          href="https://github.com/Cesarkubanski"
           target="_blank"
           rel="noreferrer"
         >
-          Made by cesarchamal
+          Hecho por Cesarkubanski
         </a>
       </footer>
     </main>

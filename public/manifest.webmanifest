@@ -1,7 +1,7 @@
 {
-  "name": "Simon - Memory Game",
-  "short_name": "Simon",
-  "description": "Watch and repeat the sequence of colors.",
+  "name": "Simón - Juego de memoria",
+  "short_name": "Simón",
+  "description": "Observa y repite la secuencia de colores.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
