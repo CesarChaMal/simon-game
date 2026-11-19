@@ -1,70 +1,74 @@
-# Simón
+# Simon
 
-Un juego de memoria inspirado en Simón, creado con React y Vite. Observa la secuencia de colores y repítela en el mismo orden. Cada ronda agrega un color; si te equivocas, puedes reiniciar la partida.
+A Simon-style memory game built with React and Vite. Watch the color sequence and repeat it in the same order. Each round adds one color. If you make a mistake, restart the game and try again.
 
-## Requisitos
+## Requirements
 
-- Node.js y npm
+- Node.js and npm
 
-## Instalación
+## Installation
 
-Clona el repositorio y entra en la carpeta del proyecto. Después, instala las dependencias:
+Clone the repository and open the project directory. Then install the dependencies:
 
 ```bash
 npm install
 ```
 
-## Ejecutar en desarrollo
+## Run in development
 
 ```bash
 npm run dev
 ```
 
-Abre en el navegador la dirección que muestra Vite en la terminal, normalmente `http://localhost:5173/`.
+Open the URL printed by Vite in your browser, usually `http://localhost:5173/`.
 
-## Instalar en Android
+## Install on Android
 
-La aplicación está disponible en [simon-game-ruby-three.vercel.app](https://simon-game-ruby-three.vercel.app/) y se puede instalar desde Chrome:
+The app is available at [simon-game-ruby-three.vercel.app](https://simon-game-ruby-three.vercel.app/) and can be installed from Chrome:
 
-1. Abre el enlace en Chrome en tu teléfono Android.
-2. Pulsa el menú de tres puntos y selecciona **Instalar aplicación** o **Añadir a pantalla de inicio**.
-3. Confirma la instalación. Simón aparecerá como una aplicación en tu pantalla de inicio.
+1. Open the link in Chrome on your Android phone.
+2. Open the three-dot menu and select **Install app** or **Add to Home screen**.
+3. Confirm the installation. Simon will appear on your home screen.
 
-Después de cargarla una vez con conexión, la aplicación también puede abrirse sin conexión.
+After the first visit, the app can also open offline.
 
-## Publicar en Vercel paso a paso
+## Deploy to Vercel
 
-1. Sube el proyecto a [GitHub](https://github.com/Cesarkubanski/simon-game).
-2. Entra en [vercel.com](https://vercel.com) e inicia sesión con tu cuenta de GitHub.
-3. En el panel de Vercel, pulsa **Add New → Project**.
-4. Busca el repositorio `Cesarkubanski/simon-game` y pulsa **Import**. Si no aparece, concede a Vercel acceso al repositorio desde la configuración de GitHub.
-5. Comprueba que Vercel detecte **Vite**. Si debes configurar los valores manualmente, utiliza:
+1. Push the project to [GitHub](https://github.com/cesarchamal/simon-game).
+2. Sign in to [vercel.com](https://vercel.com) with your GitHub account.
+3. Select **Add New → Project**.
+4. Find the `cesarchamal/simon-game` repository and select **Import**. If it does not appear, grant Vercel access to the repository in your GitHub settings.
+5. Make sure Vercel detects **Vite**. If you need to configure it manually, use:
    - **Install Command:** `npm install`
    - **Build Command:** `npm run build`
    - **Output Directory:** `dist`
-6. Pulsa **Deploy** y espera a que termine la compilación.
-7. Abre el dominio que Vercel muestra al finalizar. También puedes usar el dominio existente: [simon-game-ruby-three.vercel.app](https://simon-game-ruby-three.vercel.app/).
+6. Select **Deploy** and wait for the build to finish.
+7. Open the domain Vercel provides. You can also use [simon-game-ruby-three.vercel.app](https://simon-game-ruby-three.vercel.app/).
 
-Si el proyecto ya está conectado a Vercel, cada `git push` a la rama configurada publicará automáticamente una nueva versión.
+If the project is already connected to Vercel, every `git push` to the configured branch automatically deploys a new version.
 
-## Comandos disponibles
+## Available commands
 
-| Comando | Descripción |
+| Command | Description |
 | --- | --- |
-| `npm run dev` | Inicia el servidor de desarrollo |
-| `npm run build` | Genera la versión de producción en `dist/` |
-| `npm run preview` | Previsualiza localmente la versión de producción |
-| `npm run lint` | Analiza el código con Oxlint |
+| `npm run dev` | Starts the development server |
+| `npm run build` | Builds the production app in `dist/` |
+| `npm run preview` | Previews the production build locally |
+| `npm run lint` | Checks the code with Oxlint |
 
-## Cómo jugar
+## How to play
 
-1. Pulsa **Comenzar**.
-2. Observa los colores que se iluminan.
-3. Repite la secuencia pulsando los botones en el mismo orden.
-4. Cada ronda añade un color nuevo. Si te equivocas, pulsa **Reiniciar partida** para volver a empezar.
+1. Select **Start game**.
+2. Watch the pads light up.
+3. Repeat the sequence by pressing the colors in the same order.
+4. Each round adds one color. If you make a mistake, select **Restart game** and try again.
 
-## Tecnologías
+## Technologies
 
 - React
 - Vite
 - Oxlint
+
+## Author
+
+Made by [cesarchamal](https://github.com/cesarchamal).
